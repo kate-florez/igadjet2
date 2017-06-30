@@ -1,0 +1,9 @@
+.mw-footer {
+        @include background(linear-gradient(top, #852201, #6a1b00));
+        padding: 15px;
+        color: $color-text;
+        text-align: center;
+        a {
+            color: $color2;
+        }
+}

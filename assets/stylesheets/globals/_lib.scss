@@ -1,0 +1,11 @@
+@import "lib/helper";
+@import "lib/boxes";
+@import "lib/buttons";
+@import "lib/forms";
+@import "lib/tables";
+@import "lib/typography";
+@mixin btn1 {
+  .btn1 {
+    @include btn1;
+  }
+}

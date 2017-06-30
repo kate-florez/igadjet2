@@ -1,0 +1,124 @@
+.mw_products {
+    //#LayoutColumn2 {
+        .Breadcrumb {
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 7px;
+                    
+                        .mw_arrow {
+                            @include sprites-menu_go;
+                            float: right;
+                            margin: 1px 5px;
+                        }
+                    
+                }
+            }
+        }
+        .Block {
+            h2 {
+                //padding: 15px;
+            }
+            //.BlockContent {
+                ul.ProductList {
+                    overflow: hidden;
+                    padding-bottom: 15px;
+                    li {
+                        float: left;
+                        width: 50% !important;
+                        text-align: center;
+                        .ProductImage {
+                            margin: 0 auto;
+                        }
+                        .ProductDetails {
+                            span {
+                                display: block;
+                            }
+                        }
+                        .ProductActionAdd {
+                            padding: 7px 15px;
+                            margin: 7px 15px;
+                            background: $list;
+                            border-radius: 5px;
+                            a {
+                                color: $color-text;
+                            }
+                        }
+                    }
+                }
+            //}
+        }
+        #ProductDetails {
+            padding: 7px;
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+                color: $title;
+                margin: 10px 0px;
+            }
+            .ProductThumb {
+                margin: 0 auto;
+                height: auto !important;
+                .ImageCarouselBox {
+                    padding: 0;
+
+                }
+            }
+            .ProductMain {
+                .ProductDetailsGrid {
+                    .DetailRow {
+                        padding-bottom: 5px;
+                        .Label {
+                            float: left;
+                            width: 130px;
+                            font-weight: bold;
+                            
+                        }
+                        .Value {
+                            .Field45 {
+                                width: 45px;
+                                height: auto;
+                                margin-bottom: 15px;
+                            }
+                            .BulkDiscount {
+                               
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+    //}
+}
+.modalOverlay {
+  background: black;
+}
+#ModalContainer {
+    background: white;
+    bottom: auto !important;
+    height: auto !important;
+    left: 5%;
+    margin-left: 0 !important;
+    overflow: visible !important;
+    position: absolute !important;
+    width: 90% !important;
+    .modalData {
+        #ModalContentContainer {
+            .ModalTitle {
+                background: $inv-list;
+            }
+            .ModalContent {
+                border: 1px solid #606263;
+                border-top-width: 0;
+                background: #fff;
+                margin: 0;
+                text-align: left;
+                color: #444;
+                padding: 10px;
+            }
+        }
+    }
+    
+}

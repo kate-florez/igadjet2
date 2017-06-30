@@ -1,0 +1,98 @@
+.mw_category {
+    #LayoutColumn1 {
+        padding: 15px 7px 0px;
+        >h2 {
+            color: $title;
+            font-weight: bold;
+            font-size: 18px;
+            padding-bottom: 15px;
+            
+        }
+        .Block.Panel {            
+            margin: 0 0 5px;           
+            border-radius: 5px;
+            h2 {
+                color: $color-text;
+                padding: 15px 15px 15px 7px;
+                &[data-ur-state="disabled"] {
+                    > .mw_indicator {
+                        @extend .sprites-plus;
+                        float: right;
+                    }
+                }
+                &[data-ur-state="enabled"] {
+                    > .mw_indicator {
+                        @extend .sprites-minus;
+                        float: right;
+                    }
+                }
+            }
+            @include background(linear-gradient(top, #852201, #6a1b00));
+            .BlockContent {
+                background: $inv-list;
+                color: $color-text;
+                border: 1px solid $list;
+                ul {
+                    li {
+                        padding: 15px 15px;
+                        border-bottom: 1px solid $list;
+                        a {
+                            color: $list;
+                            .mw_arrow {
+                                @include sprites-menu_go;
+                                float: right;
+                            }
+                        }
+                        
+                    }
+                    li:last-child {
+                        border: none;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+    }
+    #LayoutColumn2 {
+        padding: 15px 7px;
+        
+        #CategoryHeading {
+            margin: 0 0 5px;           
+            border-radius: 5px;
+            @include background(linear-gradient(top, #852201, #6a1b00));
+            .BlockContent {
+                color: $color-text;
+                padding: 15px 7px;
+                
+                .SortBox {
+                    form {
+                        span {
+                            padding-right: 15px;
+                        }
+                        .mw_arrow {
+                                @include sprites-menu_go;
+                                float: right;
+                                margin: 5px 5px;
+                        }
+                        select {
+                            width: 75%;
+                            height: 25px;
+                            padding-left: 10px;
+                            color: $color-text; 
+                            @include background(linear-gradient(#632f1d, #852201, #6a1b00, #94482e));
+                            option {
+                                //padding: 7px;
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}

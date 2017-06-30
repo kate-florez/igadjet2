@@ -1,0 +1,12 @@
+.mw-home {
+    #Header {
+        background: $color1;
+        a {
+            color: $color2;
+        }
+    }
+    #SearchForm {
+        @include background(linear-gradient(top, #852201, #6a1b00));
+    }
+    
+}
